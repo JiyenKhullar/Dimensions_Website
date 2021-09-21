@@ -1,0 +1,109 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Better Toghether</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="header4">
+		<nav>
+			<div class="nav_links">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="slideshow.html">SLIDESHOW</a></li>
+					<li><a href="credits.html">CREDITS</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="text_box">
+			<h1>Slideshow</h1>
+			<p>Making the world better, together.</p>
+		</div>
+	</section>
+	<section class="slideshow">
+		<div class="slideshow_silder">
+			<div class="slideshow_slides">
+				<input type="radio" name="radio-btn" id="radiobtn1">
+				<input type="radio" name="radio-btn" id="radiobtn2">
+				<input type="radio" name="radio-btn" id="radiobtn3">
+				<input type="radio" name="radio-btn" id="radiobtn4">
+				<input type="radio" name="radio-btn" id="radiobtn5">
+				<input type="radio" name="radio-btn" id="radiobtn6">
+				<input type="radio" name="radio-btn" id="radiobtn7">
+				<input type="radio" name="radio-btn" id="radiobtn8">
+				<input type="radio" name="radio-btn" id="radiobtn9">
+				
+				<div class="slide first">
+					<img src="images/pbandj.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/strawberryandchocolate.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/yinyang.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/HandPaw.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/twohands.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/sunmoons.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/coffee.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/people.jpg">
+				</div>
+				<div class="slide">
+					<img src="images/bttg.jpg">
+				</div>
+
+				<div class="auto_nav">
+					<div class="autobtn1"></div>
+					<div class="autobtn2"></div>
+					<div class="autobtn3"></div>
+					<div class="autobtn4"></div>
+					<div class="autobtn5"></div>
+					<div class="autobtn6"></div>
+					<div class="autobtn7"></div>
+					<div class="autobtn8"></div>
+					<div class="autobtn9"></div>
+				</div>
+
+				<div class="manual_nav">
+					<label for="radiobtn1" class="manual-btn"></label>
+					<label for="radiobtn2" class="manual-btn"></label>
+					<label for="radiobtn3" class="manual-btn"></label>
+					<label for="radiobtn4" class="manual-btn"></label>
+					<label for="radiobtn5" class="manual-btn"></label>
+					<label for="radiobtn6" class="manual-btn"></label>
+					<label for="radiobtn7" class="manual-btn"></label>
+					<label for="radiobtn8" class="manual-btn"></label>
+					<label for="radiobtn9" class="manual-btn"></label>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var counter = 1;
+			setInterval(function(){
+				document.getElementById('radiobtn' + counter).checked = true;
+				counter++;
+				if(counter>9){
+					counter = 1;	
+				}
+			}, 2000);
+		</script>
+	</section>
+	<section class = "madeby">
+		<p>Made by Jiyen Khullar</p>
+	</section>
+	
+</body>
+</html>
